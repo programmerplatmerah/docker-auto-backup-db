@@ -1,0 +1,2 @@
+* * * * * cd /var/www && /usr/local/bin/php artisan schedule:run > /dev/stdout 2>&1
+*/2 * * * * mysqldump -h db -P 3306 -u admin -p12345 docker_auto_backup_db > /var/www/backup/backup_$(date +\%Y-\%m-\%d).sql
